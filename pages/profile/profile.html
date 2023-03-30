@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="./profile.css">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="profile-wrapper">
+    <header class="header">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+      </div>
+      <div class="user-data">
+        <ul>
+          <li class="first-name">First name:&ensp;&ensp;</li>
+          <li class="last-name">Last name:&ensp;&ensp;</li>
+          <li class="email">Email:&ensp;&ensp;</li>
+          <li class="birth-date">Date of birth:&ensp;&ensp;</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="edit-profile-wrapper">
+        <div class="group change-password-wrapper">
+          <input 
+            type="password" 
+            name="confirmPasswordForChange" 
+            id="confirm-password-for-change" 
+            placeholder="Enter current password..." 
+            autocomplete="off"
+          >
+          <input 
+            data-for-validate="for-validate"
+            type="password" 
+            name="password" 
+            id="new-password-for-change" 
+            placeholder="Enter new password..." 
+            autocomplete="off"
+          >
+          <button type="button" id="change-password-btn">Change password</button>
+          <p class="message-box error" id="password-for-change-not-match-msg-box">The password doesn`t match!</p>
+          <p class="message-box error" id="password-for-change-invalid-msg-box">Password is invalid!!</p>
+          <p class="message-box successful" id="password-changed-msg-box">The password changed!</p>
+        </div>
+        <div class="group delete-account-wrapper">
+          <input 
+            type="password" 
+            name="passwordForDelete" 
+            id="confirm-password-for-delete" 
+            placeholder="Confirm password for delete..." 
+            autocomplete="off">
+          <button type="button" id="delete-account-btn">Delete account</button>
+          <p class="message-box error" id="password-for-delete-not-match-msg-box">The password doesn`t match!</p>
+        </div>
+        <button type="button" id="sign-out-btn">Sign out</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="./profile.js" type="module"></script>
+</body>
+</html>

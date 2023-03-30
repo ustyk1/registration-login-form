@@ -1,0 +1,10 @@
+.message-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 106px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0;
+}

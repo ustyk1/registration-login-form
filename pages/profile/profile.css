@@ -1,0 +1,106 @@
+.profile-wrapper {
+  box-sizing: border-box;
+  max-width: 900px;
+  min-width: 570px;
+  /* width: 100%; */
+  height: auto;
+  background: rgba(3, 3, 55, 0.65);
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.header {
+  background: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.user-data {
+  min-width: 300px;
+  border: 1px solid white;
+}
+
+.user-data > ul {
+  padding: 10px;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  font-size: 18px;
+}
+
+.edit-profile-wrapper{
+  padding: 20px;
+}
+
+.edit-profile-wrapper > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  padding: 15px;
+}
+
+.edit-profile-wrapper > div > input {
+  display: flex;
+  gap: 15px;
+}
+
+button[type="button"] {
+  min-width: 150px;
+  max-width: 200px;
+  margin: 0;
+  justify-self: flex-end;
+}
+
+input { 
+  width: 200px;
+}
+
+#sign-out-btn {
+  margin: 0 auto;
+}
+
+#password-for-change-not-match-msg-box, 
+#password-changed-msg-box,
+#password-for-delete-not-match-msg-box{
+  bottom: 0;
+  left: 15px;
+  right: auto;
+}
+
+#password-for-change-invalid-msg-box {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.delete-account-wrapper {
+  position: relative;
+}

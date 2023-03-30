@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <header>Sign up new account</header>
+    <form action="#" class="registration-form form" id="registration-form">
+      <div class="form-group">
+        <label for="firstName">First name</label>
+        <input  
+          required 
+          class="" 
+          type="text" 
+          name="firstName" 
+          id="firstName" 
+          placeholder="Enter your first name" 
+          autocomplete="off"
+        >
+        <p></p>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input 
+          required 
+          type="text" 
+          name="lastName" 
+          id="lastName" 
+          placeholder="Enter your last name" 
+          autocomplete="off"
+        >
+        <p></p>
+      </div>
+      <div class="form-group">
+        <label for="birthDate">Date of birth</label>
+        <input 
+          required 
+          type="date" 
+          name="birthDate" 
+          id="birthDate" 
+          placeholder="Date of birth"  
+          autocomplete="off"
+        >
+        <p></p>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+          required 
+          type="text" 
+          name="email" 
+          id="email" 
+          placeholder="example@gmail.com" 
+          autocomplete="off"
+        >
+        <p></p>
+      </div>
+      <div class="form-group">
+        <label for="email">Secret word</label>
+        <input 
+          required 
+          type="text" 
+          name="secretWord" 
+          id="secretWord" 
+          placeholder="Word" 
+          autocomplete="off"
+        >
+        <p></p>
+      </div>
+      <div class="form-group form-group_password">
+        <label 
+          for="password" 
+          data-title="At least 6 characters, one letter in upper and low case, special character (!@#$&*) and digit."
+        >Password</label>
+        <input 
+          required 
+          data-for-validate="for-validate"
+          type="password" 
+          name="password" 
+          id="password" 
+          placeholder="Password"
+        >
+        <p></p>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Сonfirm password</label>
+        <input 
+          required 
+          type="password" 
+          name="confirmPassword" 
+          id="confirm-password" 
+          placeholder="Confirm password"
+        >
+        <p></p>
+      </div>
+      <button type="submit" id="submitFormBtn" >Sign Up</button>
+      <p class="message-box error" id="already-signed-up-msg-box">The account is already signed up! Please, sign in!</p>
+      <p class="message-box successful" id="just-signed-up-msg-box">The account is registered! Please, SIGN IN!</p>
+      <button type="button" id="sign-in-btn" >Sign In</button>
+    </form>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>

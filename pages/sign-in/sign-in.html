@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="./sign-in.css">
+  <title>Sign In</title>
+</head>
+<body>
+  <div class="container">
+    <header>Sign in to your account</header>
+    <form action="#" class="sign-in-form form" id="sign-in-form">
+      <div class="form-group">
+        <label for="login">Login</label>
+        <input 
+          required 
+          type="text" 
+          name="login" 
+          id="login" 
+          placeholder="Enter your login" 
+          autocomplete="off"
+        >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          required 
+          type="password" 
+          name="passwordSignIn" 
+          id="passwordSignIn" 
+          placeholder="Enter your password" 
+          autocomplete="off"
+        >
+      </div>
+      <button type="submit" id="submit-sign-in-form" disabled>Sign in</button>
+      <p class="message-box error" id="incorrect-login-or-password-msg-box">Incorrect login or password!</p>
+      <button type="button" id="go-to-registration-btn">Go to registration</button>
+      <button type="button" id="go-to-reset-password-btn">Forgot password?</button>
+    </form>
+  </div>
+
+  <script src="./sign-in.js" type="module"></script>
+</body>
+</html>
